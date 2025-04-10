@@ -1,0 +1,136 @@
+:root {
+  --white: #ffffff;
+  --off-white: #e5e5e5;
+  --transp-white-1: rgba(255, 255, 255, 0.25);
+  --transp-white-2: rgba(255, 255, 255, 0.18);
+  --blue-1: #62b8f5;
+  --blue-2: #4475ef;
+  --shadow: rgba(3, 46, 87, 0.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(5, 41, 51);
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 72% 25%;
+  grid-gap: 3%;
+  margin-bottom: 2rem;
+}
+
+.container {
+  width: 50%;
+  background: var(--transp-white-2);
+  backdrop-filter: blur(10px);
+  margin: 5rem auto;
+  padding: 2rem;
+  border: 2px solid var(--transp-white-2);
+  border-radius: 10px;
+  color: rgb(5, 41, 51);
+}
+
+input[type="text"]::placeholder {
+  color: #999;
+}
+
+input[type="text"],
+.btn {
+  background-color: transparent;
+  padding: 0.5rem;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid white;
+  font-size: 1rem;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border: 2px solid #04009a;
+  cursor: pointer;
+  transition: 0.3s;
+  color: var(--blue-2);
+  background-color: transparent;
+  border-radius: 0.3em;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  background-color: rgb(5, 41, 51);
+  color: #fff;
+}
+
+.weather {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.left,
+.right {
+  flex: 1;
+  padding: 1rem;
+  border-radius: 10px;
+  background: var(--transp-white-2);
+  backdrop-filter: blur(10px);
+}
+
+.temp,
+.city {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.icon img {
+  width: 100px;
+}
+
+.condition {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1000px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    width: 90%;
+  }
+
+  .weather {
+    flex-direction: column;
+  }
+
+  form {
+    grid-template-columns: 100%;
+  }
+}
+
