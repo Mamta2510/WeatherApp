@@ -5,7 +5,7 @@ import datetime
 import pytz
 
 def home(request):
-    API_Key_Weather = 'c9147186ddffffdad6f50f674ef31d4f'
+    API_Key_Weather = ''
     API_Key_Image = 'AIzaSyC6FC2fiKj9GRI8YUCb_a1-d51zfuTh3qo'
     SEARCH_ENGINE_ID = '26ed904f7f97b4926'
     
