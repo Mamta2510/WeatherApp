@@ -6,8 +6,8 @@ import pytz
 
 def home(request):
     API_Key_Weather = ''
-    API_Key_Image = 'AIzaSyC6FC2fiKj9GRI8YUCb_a1-d51zfuTh3qo'
-    SEARCH_ENGINE_ID = '26ed904f7f97b4926'
+    API_Key_Image = ''
+    SEARCH_ENGINE_ID = ''
     
     city = request.POST.get('city', 'delhi')  # Default to 'delhi' if no city input
     
